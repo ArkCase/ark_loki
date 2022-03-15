@@ -2,11 +2,11 @@ FROM 345280441424.dkr.ecr.ap-south-1.amazonaws.com/ark_base:latest
 
 RUN yum update -y
 RUN yum install -y unzip
-LABEL ORG="Armedia LLC" \
+LABEL ORG="ArkCase LLC" \
       APP="loki" \
       VERSION="1.0" \
       IMAGE_SOURCE="https://github.com/ArkCase/ark_loki" \
-      MAINTAINER="Armedia LLC"
+      MAINTAINER="ArkCase LLC"
 
 #LOKI
 ARG LOKI_VERSION="2.4.2"
